@@ -19,11 +19,55 @@
             --text-primary: #0f172a;
             --text-secondary: #64748b;
             --border-color: #e2e8f0;
+            --body-bg: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+            --card-bg: white;
+            --nav-bg: white;
+            --hero-bg: var(--gradient-primary);
+            --hero-text-color: white;
+            --footer-bg: var(--dark-color);
+            --footer-text-color: white;
+            --code-block-bg: var(--dark-color);
+            --code-block-text: #e2e8f0;
+            --action-items-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --action-items-text: white;
+            --info-card-bg: var(--light-color);
+
             --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+
+        body.dark-mode {
+            --primary-color: #797bf3; /* Slightly lighter for dark bg */
+            --secondary-color: #9e74f8;
+            --accent-color: #07c2e0;
+            --success-color: #12d899;
+            --warning-color: #f7a82a;
+            --error-color: #f15656;
+
+            --dark-color: #f8fafc; /* Becomes light text */
+            --light-color: #1e293b; /* Becomes dark background component */
+            --text-primary: #f0f2f5; /* Light text for dark mode */
+            --text-secondary: #a0aec0; /* Lighter grey for secondary text */
+            --border-color: #4a5568; /* Darker, but visible border */
+            --body-bg: linear-gradient(135deg, #1a2330 0%, #222c38 100%);
+            --card-bg: #2d3748; /* Darker card background */
+            --nav-bg: #283141;
+            --hero-bg: linear-gradient(135deg, #4c51bf 0%, #673ab7 100%); /* Darker hero */
+            --hero-text-color: #f0f2f5;
+            --footer-bg: #171e29;
+            --footer-text-color: #f0f2f5;
+            --code-block-bg: #1a202c;
+            --code-block-text: #e2e8f0;
+            --action-items-bg: linear-gradient(135deg, #5155a6 0%, #5e358f 100%);
+            --action-items-text: #f0f2f5;
+            --info-card-bg: #283141;
+
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.25);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
         }
 
         * {
@@ -36,7 +80,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.7;
             color: var(--text-primary);
-            background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 100%);
+            background: var(--body-bg);
             min-height: 100vh;
         }
 
@@ -48,8 +92,8 @@
 
         /* Header Styles */
         .hero {
-            background: var(--gradient-primary);
-            color: white;
+            background: var(--hero-bg);
+            color: var(--hero-text-color);
             padding: 4rem 0;
             text-align: center;
             position: relative;
@@ -103,7 +147,7 @@
 
         /* Navigation */
         .nav {
-            background: white;
+            background: var(--nav-bg);
             padding: 1rem 0;
             box-shadow: var(--shadow-md);
             position: sticky;
@@ -138,7 +182,7 @@
         }
 
         .content-card {
-            background: white;
+            background: var(--card-bg);
             border-radius: 16px;
             padding: 3rem;
             margin-bottom: 2rem;
@@ -215,7 +259,7 @@
         }
 
         .info-card {
-            background: var(--light-color);
+            background: var(--info-card-bg);
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 1.5rem;
@@ -256,8 +300,8 @@
 
         /* Code Blocks */
         .code-block {
-            background: var(--dark-color);
-            color: #e2e8f0;
+            background: var(--code-block-bg);
+            color: var(--code-block-text);
             padding: 1.5rem;
             border-radius: 12px;
             font-family: 'Fira Code', monospace;
@@ -270,8 +314,8 @@
 
         /* Action Items */
         .action-items {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: var(--action-items-bg);
+            color: var(--action-items-text);
             padding: 2rem;
             border-radius: 16px;
             margin: 2rem 0;
@@ -317,7 +361,7 @@
             padding: 1rem;
             border-radius: 8px;
             border-left: 4px solid;
-            background: white;
+            background: var(--card-bg);
             box-shadow: var(--shadow-sm);
         }
 
@@ -401,8 +445,8 @@
 
         /* Footer */
         .footer {
-            background: var(--dark-color);
-            color: white;
+            background: var(--footer-bg);
+            color: var(--footer-text-color);
             padding: 3rem 0 2rem 0;
             text-align: center;
         }
@@ -421,13 +465,26 @@
         }
 
         .footer-link {
-            color: rgba(255,255,255,0.8);
+            color: var(--footer-text-color, rgba(255,255,255,0.8));
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .footer-link:hover {
-            color: white;
+            color: var(--footer-text-color, white);
+            opacity: 1;
+        }
+
+        body.dark-mode .footer-link {
+             color: var(--text-secondary); /* Or a specific light link color for footer in dark mode */
+        }
+
+        body.dark-mode .footer-link:hover {
+            color: var(--text-primary);
+        }
+
+        body.dark-mode #darkModeToggle {
+            color: var(--text-secondary); /* Ensure icon color matches other text in dark mode */
         }
     </style>
 </head>
@@ -465,6 +522,9 @@
                 <a href="#risks" class="nav-link">Risks</a>
                 <a href="#actions" class="nav-link">Actions</a>
                 <a href="#community-ops" class="nav-link">Community Ops</a>
+                <button id="darkModeToggle" aria-label="Toggle dark mode" style="background: none; border: none; color: var(--text-secondary); font-size: 1.25rem; cursor: pointer; padding: 0.5rem;">
+                    <i class="fas fa-moon"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -961,6 +1021,46 @@
         document.querySelectorAll('.content-card').forEach(card => {
             observer.observe(card);
         });
+
+        // Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const moonIcon = '<i class="fas fa-moon"></i>';
+        const sunIcon = '<i class="fas fa-sun"></i>';
+
+        // Function to apply dark mode
+        const enableDarkMode = () => {
+            body.classList.add('dark-mode');
+            darkModeToggle.innerHTML = sunIcon;
+            localStorage.setItem('darkMode', 'enabled');
+        }
+
+        // Function to disable dark mode
+        const disableDarkMode = () => {
+            body.classList.remove('dark-mode');
+            darkModeToggle.innerHTML = moonIcon;
+            localStorage.setItem('darkMode', 'disabled');
+        }
+
+        // Check localStorage for saved preference
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            enableDarkMode();
+        } else {
+            // Optional: default to user's system preference if no localStorage item is set
+            // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('darkMode') !== 'disabled') {
+            //     enableDarkMode();
+            // }
+        }
+
+        // Toggle on button click
+        darkModeToggle.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                disableDarkMode();
+            } else {
+                enableDarkMode();
+            }
+        });
+
     </script>
 </body>
 </html> 
