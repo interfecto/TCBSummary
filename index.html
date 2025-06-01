@@ -327,8 +327,12 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
+            .nav {
+                position: relative;
+                top: auto;
+            }
             body {
-                font-size: 90%; /* Reduce base font size for smaller screens */
+                font-size: 90%;
             }
             .hero h1 { font-size: 2.5rem; }
             .hero-subtitle { font-size: 1.1rem; }
@@ -336,25 +340,25 @@
             .subsection-title { font-size: 1.5rem; }
             .content-card { padding: 1.5rem; }
             .nav-content { 
-                flex-direction: column; /* Stack nav links vertically */
-                align-items: center; /* Center nav links */
+                flex-direction: column;
+                align-items: center;
                 gap: 0.5rem; 
             }
             .nav-link {
-                display: block; /* Make nav links take full width for easier tapping */
+                display: block;
                 width: 100%;
                 text-align: center;
                 padding: 0.75rem 1rem;
             }
             .container { padding: 0 15px; }
             .info-grid {
-                grid-template-columns: 1fr; /* Stack info cards on mobile */
+                grid-template-columns: 1fr;
             }
             .risk-matrix {
-                grid-template-columns: 1fr; /* Stack risk items on mobile */
+                grid-template-columns: 1fr;
             }
             .footer-links {
-                flex-direction: column; /* Stack footer links vertically */
+                flex-direction: column;
                 gap: 1rem;
             }
         }
