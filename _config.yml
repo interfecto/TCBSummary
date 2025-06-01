@@ -1,0 +1,22 @@
+# Site settings
+title: "Koinos Future Analysis Report"
+description: "Comprehensive Community-Driven Strategic Analysis for Koinos Blockchain"
+url: "https://yourusername.github.io"
+baseurl: "/koinos-analysis"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - LICENSE
+  - .gitignore
+
+# GitHub Pages settings
+remote_theme: 
+github: [metadata] 
