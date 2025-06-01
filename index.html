@@ -428,6 +428,9 @@
     </style>
 </head>
 <body>
+    <div style="background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; padding: 1rem; text-align: center; margin-bottom: 1rem;">
+        <strong>Disclaimer:</strong> This page is AI-generated and most likely contains misinformation. It is intended for orientation and as a basis for improvements only. Please verify all information independently.
+    </div>
     <div class="scroll-progress"></div>
 
     <!-- Hero Section -->
@@ -457,6 +460,7 @@
                 <a href="#governance" class="nav-link">Governance</a>
                 <a href="#risks" class="nav-link">Risks</a>
                 <a href="#actions" class="nav-link">Actions</a>
+                <a href="#community-ops" class="nav-link">Community Ops</a>
             </div>
         </div>
     </nav>
@@ -469,6 +473,10 @@
                 <h2 class="section-title"><i class="fas fa-bullseye"></i> Executive Summary</h2>
                 
                 <div class="info-grid">
+                    <div class="info-card">
+                        <h4><i class="fas fa-bullseye-check"></i> Our Vision</h4>
+                        <p>Koinos for the honest crypto enthusiast: users, developers, traders, and investors.</p>
+                    </div>
                     <div class="info-card">
                         <h4><i class="fas fa-exchange-alt"></i> Mission-Critical Transition</h4>
                         <p>The Koinos ecosystem is in a pivotal shift—official Koinos Group (KG) exit is confirmed, with full code, infrastructure, and governance handover to an emergent, community-led federation.</p>
@@ -539,12 +547,14 @@
                 </h3>
                 
                 <ul>
-                    <li><strong>Bridge Expansion:</strong> Add Solana bridge development and launch DEX/bridge marketing</li>
+                    <li><strong>Bridge Expansion:</strong> Add Solana bridge (Wormhole integration suggested) development and launch DEX/bridge marketing <span class="status-indicator status-yellow">Dev Needed</span></li>
                     <li><strong>Sustained Infrastructure:</strong> Scale to 7+ community nodes with disaster recovery</li>
                     <li><strong>Legal Entity Operations:</strong> Fully operational DAO/Foundation with transparent treasury</li>
                     <li><strong>dApp Revival:</strong> Relaunch Kollection, Koiner, KoinDX with bridge integration</li>
                     <li><strong>Governance Review:</strong> Community-wide Q4 survey and 2026 roadmap planning</li>
                     <li><strong>Ongoing Infra Review:</strong> Documented KPIs, cost tracking, owner registry, redundancy/backup <span class="status-indicator status-yellow">Planned</span></li>
+                    <li><strong>Lending MVP:</strong> Initial design and development for a Koinos-based lending solution <span class="status-indicator status-yellow">Planned</span></li>
+                    <li><strong>Koinos Stablecoin (KUSD):</strong> Finalize development and prepare for launch, integrate with Vortex <span class="status-indicator status-yellow">Planned</span></li>
                 </ul>
 
                 <h4 class="subsection-title" style="font-size: 1.25rem; margin-top: 2rem; margin-bottom: 0.75rem;"><i class="fas fa-check-circle"></i> Success Triggers for Q4 2025</h4>
@@ -562,6 +572,7 @@
                 <p style="margin-bottom: 1.5rem;">The detailed roadmap for 2026 will be a key outcome of the community-wide review and planning activities scheduled for Q4 2025. The Koinos community will collaboratively define specific goals and initiatives. Based on the current trajectory, anticipated strategic themes for 2026 may include:</p>
                 <ul>
                     <li><strong>Ecosystem Expansion & Mainstream Adoption:</strong> Focusing on broader user acquisition, fostering diverse dApp categories (DeFi, gaming, social), and significantly increasing Total Value Locked (TVL) across bridges and DEXs.</li>
+                    <li><strong>Targeted Outreach to dApp Builders:</strong> Actively promote Koinos to dApp developers, particularly within ecosystems like Solana, highlighting unique advantages and AI-related opportunities.</li>
                     <li><strong>Advanced Governance & Decentralization:</strong> Maturing the DAO/Foundation structures and processes, enhancing on-chain voting mechanisms, and further empowering community-led working groups for key ecosystem functions.</li>
                     <li><strong>Long-Term Protocol Sustainability & Security:</strong> Continued focus on core protocol development, rigorous security audits, scaling solutions, and ensuring the long-term economic viability and technical robustness of the Koinos blockchain.</li>
                     <li><strong>Strategic Partnerships & Enhanced Interoperability:</strong> Actively seeking and developing strategic partnerships with other blockchain projects, enterprises, and developer communities to expand Koinos' reach and utility through new integrations and cross-chain functionalities.</li>
@@ -576,7 +587,7 @@
                 <div class="risk-matrix">
                     <div class="risk-item risk-low">
                         <h4><i class="fas fa-vote-yea"></i> Proposal System MVP</h4>
-                        <p>All inflation, funding, and governance events blocked until live/tested</p>
+                        <p>All inflation, funding, and governance events blocked until live/tested. Julian awaiting Michael's validation for fund smart contracts.</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 75%"></div>
                         </div>
@@ -594,7 +605,7 @@
                     
                     <div class="risk-item risk-medium">
                         <h4><i class="fas fa-bridge"></i> Bridge MVPs</h4>
-                        <p>Vortex/ETH first, then Solana - requires dev resources and funding</p>
+                        <p>Vortex/ETH first, then Solana (Wormhole suggested, ~2 SOL + Liquidity for launch) - requires dev resources and funding</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 30%"></div>
                         </div>
@@ -603,7 +614,8 @@
                     
                     <div class="risk-item risk-medium">
                         <h4><i class="fas fa-gavel"></i> Legal Entity Formation</h4>
-                        <p>Required for treasury and contracts - non-blocking initially</p>
+                        <p>Required for treasury, contracts, web2 asset ownership (domains, email), App Store listings, on/off-ramps, and MM agreements. Non-blocking initially. <a href="https://koinos-foundation-website-ub9c.vercel.app/" target="_blank">PoC Site</a></p>
+                        <p><strong>Solutions:</strong> Cut deal with KG, establish new entity (Europe, Asia, Islands - consult Pherodone, Robert Johanson). Domain koinos.foundation bought by Justin.</p>
                         <div class="progress-container">
                             <div class="progress-bar" style="width: 20%"></div>
                         </div>
@@ -664,7 +676,7 @@
                 <div class="action-items">
                     <h3><i class="fas fa-coins"></i> Inflation-Driven Resource Pools</h3>
                     <div class="action-item">
-                        <strong>Proposal System Governance:</strong> 30% inflation event managed by DAO/proposal votes
+                        <strong>Proposal System Governance:</strong> Target 30% inflation event managed by DAO/proposal votes. Requires VHP consensus (60% stake); KG support is a significant factor.
                     </div>
                     <div class="action-item">
                         <strong>Distribution Channels:</strong> Dev grants, LP incentives, infra bounties, retroactive compensation
@@ -695,7 +707,7 @@
                     
                     <div class="info-card">
                         <h4>2. KG Infra Handover <span class="status-indicator status-green">Q3 Priority</span></h4>
-                        <p><strong>Leads:</strong> 52kph, Frank, pgarcgo | <strong>Goal:</strong> Audit, migrate, minimize</p>
+                        <p><strong>Leads:</strong> 52kph, Frank, pgarcgo | <strong>Goal:</strong> Audit, migrate, minimize. Address KG API node (testnet/mainnet) continuity: assess KG support, explore cost reduction (re-hosting, private infra), and establish clear timelines/deals.</p>
                     </div>
                     
                     <div class="info-card">
@@ -706,6 +718,33 @@
                     <div class="info-card">
                         <h4>4. Sovrano Wallet <span class="status-indicator status-yellow">Q3-Q4</span></h4>
                         <p><strong>Lead:</strong> Adriano Ӄ | <strong>Integration:</strong> Kuku, Kollection | <strong>Goal:</strong> Public release</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>5. Market Maker & CEX Listing <span class="status-indicator status-red">Critical</span></h4>
+                        <p><strong>Context:</strong> MM is required for MEXC listing (approx. €5000/month, paid by KG). KG holds the contract and provided liquidity.</p>
+                        <p><strong>Actions:</strong> Identify current MM. Explore options for cheaper alternatives or self-launching. Determine if contract can be transferred to a new foundation. Assess ongoing CEX needs and liquidity requirements.</p>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title"><i class="fas fa-cubes"></i> dApp Ecosystem Revival</h3>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Re-activate Kollection <span class="status-indicator status-yellow">ASAP/Vortex Launch</span></h4>
+                        <p><strong>Action:</strong> Contact Justin regarding re-launch needs and proposal for continuation. Integrate with Sovrano and Vortex.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>Re-activate Koiner (or similar) <span class="status-indicator status-yellow">ASAP/Vortex Launch</span></h4>
+                        <p><strong>Action:</strong> Contact Frank regarding Koiner v2 needs and proposal. Ensure API continuity for CMC/CG. Explore alternatives if Koiner v1 re-launch isn't feasible.</p>
+                        <p><strong>Note:</strong> Standard Koinos API calls can replicate some Koiner API functionality for CMC/CG if needed, potentially hosted independently.</p>
+                    </div>
+                    <div class="info-card">
+                        <h4>New Block Explorer <span class="status-indicator status-green">Basic ETA June 2025</span></h4>
+                        <p><strong>Developer:</strong> @realnogger (tg) / @interf3cto (X)</p>
+                        <p>Etherscan clone + Koinos specific features. Open source planned. Public API/GraphQL may need future funding.</p>
+                    </div>
+                     <div class="info-card">
+                        <h4>Enhance KoinDX <span class="status-indicator status-yellow">Ongoing</span></h4>
+                        <p><strong>Action:</strong> Contact Ederlang for enhancement needs and proposal. Tightly integrate with Vortex. Consider Staking integration (KoinCity).</p>
                     </div>
                 </div>
             </section>
@@ -719,6 +758,7 @@
                     <li><strong>Proposal System Deployment:</strong> Enable on-chain voting for all major decisions</li>
                     <li><strong>Action Registry:</strong> Named owners for every technical, infra, and governance task</li>
                     <li><strong>Working Groups:</strong> Formalize teams for infra, bridge, dApp, outreach, legal</li>
+                    <li><strong>Control & Execution Body:</strong> Establish interim body (e.g., foundation style) with trusted community members (max 5 core) to drive execution with workgroups.</li>
                 </ul>
 
                 <h3 class="subsection-title"><i class="fas fa-calendar"></i> Q2-Q3 Milestones</h3>
@@ -727,6 +767,20 @@
                     <li><strong>Treasury Operations:</strong> Multi-sig with transparent disbursements</li>
                     <li><strong>Voting System:</strong> KOIN/VHP weighted voting with anti-Sybil measures</li>
                     <li><strong>KG Role:</strong> S&M abstention from treasury/community governance</li>
+                </ul>
+            </section>
+
+            <!-- Community Operations & Support -->
+            <section id="community-ops" class="content-card fade-in">
+                <h2 class="section-title"><i class="fas fa-people-carry"></i> Community Operations & Support</h2>
+                <h3 class="subsection-title"><i class="fas fa-sync-alt"></i> Community Organisation & Workflow</h3>
+                <ul>
+                    <li><strong>Tracking Systems:</strong> Implement clear systems for tracking discussion topics and backlogs (action items).</li>
+                    <li><strong>Agile Methodology:</strong> Consider adopting a sprint-based approach (e.g., 2-week sprints) for coordinated development and task execution, with agreement from relevant parties.</li>
+                </ul>
+                <h3 class="subsection-title"><i class="fas fa-headset"></i> Community Support Tooling</h3>
+                <ul>
+                    <li><strong>Evaluate Support Platforms:</strong> Explore and implement more structured support tooling beyond Telegram/Discord to better manage user queries and dApp support, preventing information loss.</li>
                 </ul>
             </section>
 
